@@ -13,9 +13,20 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <h3>Sign In</h3>
+
+        <form action="/login" method="post">
+        {% csrf_token %}
+            <label for="">Username</label>     
+            <input type="text" id="username" name="username" placeholder="enter your username" required>
+            <br>
+            <label for="">Password</label>     
+            <input type="password" id="pass1" name="pass1" placeholder="enter your password" required>
+            <br>
+
+            <button type="submit">Sign In</button>
+        
+        </form>
         
         <script src="" async defer></script>
     </body>

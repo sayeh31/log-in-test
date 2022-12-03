@@ -12,6 +12,6 @@ from .models import Userlevels
 
 
 def view_login_page(request):
-    return render(request,"templates/login.html") 
+    return render(request,"login.html") 
 
     
