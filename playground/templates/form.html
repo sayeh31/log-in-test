@@ -7,27 +7,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Authentication</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <h3>Sign In</h3>
+        <h3>welcom you</h3>
         {{level}}
-        <form action="/login" method="post">
-        {% csrf_token %}
-            <label for="">Username</label>     
-            <input type="text" id="username" name="username" placeholder="enter your username" required>
-            <br>
-            <label for="">Password</label>     
-            <input type="password" id="pass1" name="pass1" placeholder="enter your password" required>
-            <br>
-
-            <button type="submit">Sign In</button>
-        
-        </form>
-        
+        <!-- <button type="submit"><a href="/signup">Signup</a></button> -->
+        <button type="submit"><a href="/signin">Signin</a></button>
         <script src="" async defer></script>
     </body>
 </html>

@@ -12,6 +12,15 @@ from .models import Userlevels
 
 
 def view_login_page(request):
-    return render(request,"login.html") 
+    return render(request,"login.html")  
+
+def form(request):
+    if request.method=="POST":
+        username= request.POST["username"]
+        pass1=request.POST["pass1"]
+       #user=authenticate(username=username,password=pass1)
+        user_level = Userlevels.objects.filter(username = username); 
+        return render(request,"form.html", {'level': user_level}) 
+
 
     
